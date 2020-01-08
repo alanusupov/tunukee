@@ -1,0 +1,107 @@
+
+@import 'parts/var'
+@import 'parts/mixin'
+@import 'parts/default'
+@import 'parts/about'
+@import 'parts/partners'
+@import 'parts/products'
+
+.wrapper 
+    position: relative
+    overflow: hidden
+    min-height: 100%
+    
+    
+.container
+    margin: 0 auto
+    max-width: 1160px
+    box-sizing: border-box
+.ham
+    margin: 40px
+    z-index: 4
+    position: relative
+    +laptop
+        display: none
+.hactive
+    
+    z-index: -1
+.header
+    background: url(../css/img/headerimg.png)
+    position: relative
+    background-size: cover
+    min-height: 80vh
+.nav-list
+    background: black
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    color: #ffffff
+    justify-content: space-around
+    list-style-type: none
+    margin: 1px
+    padding-top: 20px
+    max-width: 1070px
+    align-items: center
+    font-size: 16px
+    +laptop
+        flex-direction: row
+        background: none
+.nav-list-item
+    padding: 0 10px
+    padding: 16px
+    
+
+
+.nav-img
+    padding: 0 80px
+    display: none
+    +desktop
+        display: block
+.nav-list-link
+    text-decoration: none
+    color: #ffffff
+    &:hover
+        color: $mainColor
+.header-main
+    display: flex
+    flex-direction: column
+    color: #fff
+    max-width: 755px
+    margin: 45px auto
+    text-align: center
+.header-title
+    font-size: 36px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 240px
+    +laptop
+        margin-bottom: 0
+.header-icon-list
+    text-align: center
+    display: none
+    justify-content: space-around   
+    max-width: 800px
+    margin: 0 auto
+    +laptop
+        display: flex
+
+.header-icon-item
+    transform: rotate(-45deg)
+.header-icon-text
+    text-transform: uppercase
+    color: #ffffff
+    font-size: 16px
+.icon-border
+    border: 5px solid $mainColor
+    width: 120px
+    height: 120px
+    transform: rotate(45deg)
+    border-radius: 10%
+    padding: 20px
+    padding-right: 25px
+    padding-bottom: 25px
+
+
+
+
